@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+ }
+ /*reseteo*/
+*{
+    margin: 0; 
+    padding: 0;
+}
+/*Variables*/
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+    
+}
+
+body{
+    background-color: var(--Light-gray);
+    font-family: 'Outfit', sans-serif;;
+}
+#disenio-principal{
+    background-color: var(--White);
+    width: 320px;
+    height: 500px;
+    margin: 60px auto; /*se centra*/
+    border-radius: 16px;
+    padding: 16px;
+}
+.img-container{
+    background-image: url(./images/image-qr-code.png); /*imagen*/
+    background-size: cover; /*se ajusta la imagen en automatico y pixeles*/
+    width: 100%;
+    height: 288px;
+    border-radius: 16px;
+    margin-bottom: 24px; /*separar la imagen del texto*/
+}
+h1{
+    color: var(--Dark-blue);
+    font-size: 23px;
+    text-align: center;
+    margin: 0 15px; /*disminuir el espacio para que quede al detalle*/
+    margin-bottom: 24px;
+   
+    
+}
+p{
+    font-size: 15px;
+    color: var(--Grayish-blue);
+    text-align: center;
+    margin: 0 30px ;
+}
+img{
+    border-radius: 25px;
+    width: 287px;
+    height: 287px;
+
+}
+@media (min-width: 1295px) {
+    #disenio-principal{
+        background-color: var(--White);
+        width: 320px;
+        height: 500px;
+        margin: 360px auto; /*se centra*/
+        border-radius: 16px;
+        padding: 16px;
+    }
+    
+}
+
